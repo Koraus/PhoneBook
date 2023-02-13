@@ -21,7 +21,7 @@
     <div class="new-number-window__btns">
       <button
         class="new-number-window__btn"
-        :disabled="!numberInput && nameInput"
+        :disabled="!(numberInput && nameInput)"
         @click="addNewNumber"
       >
         confirm

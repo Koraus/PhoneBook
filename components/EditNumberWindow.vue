@@ -19,7 +19,7 @@
     />
 
     <div class="edit-window__btns">
-      <button class="edit-window__btn" @click="editNumber" :disabled="!numberInput && nameInput">confirm</button>
+      <button class="edit-window__btn" @click="editNumber" :disabled="!(numberInput && nameInput)">confirm</button>
       <button class="edit-window__btn" @click="close">cancel</button>
     </div>
   </div>
@@ -141,6 +141,8 @@ export default {
   }
 }
 
+
+
 @media (max-width: 800px) {
   .edit-window__btn {
     font-size: 10px;
@@ -151,11 +153,11 @@ export default {
 
     margin-top: 30px;
   }
-  .edit-window__window {
+  .edit-window {
     padding: 40px;
     min-height: 260px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: center;
     &__title {
       font-size: 10px;
@@ -165,7 +167,6 @@ export default {
     &__input {
       font-size: 14px;
       margin-bottom: 8px;
-
     }
   }
 }

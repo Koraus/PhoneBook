@@ -23,12 +23,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap");
 @import url('https://fonts.cdnfonts.com/css/clash-display');
-</style>
-
-<style lang="scss" scoped>
 .container {
   padding: 8px;
 }

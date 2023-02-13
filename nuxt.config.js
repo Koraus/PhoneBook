@@ -12,8 +12,22 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/PhoneBook-Web/favicon.png' },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.cdnfonts.com/css/clash-display",
+      },
+
     ]
+  },
+
+  target: 'static',
+  router: {
+    base: '/PhoneBook-Web/'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -35,11 +49,6 @@ export default {
   modules: [
   //  '@nuxtjs/axios',
   ],
-  //axios: {
-    // extra config e.g
-   // BaseURL: 'https://63e38077619fce55d41a5d49.mockapi.io'
-  //},
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
